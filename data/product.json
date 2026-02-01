@@ -1,0 +1,52 @@
+{
+  "popularproducts": [
+    {
+      "id": 1,
+      "name": "Portfolio Website",
+      "category": "Web",
+      "price": "$0",
+      "image": "",
+      "description": "A responsive portfolio website showcasing projects and blog posts."
+    },
+    {
+      "id": 2,
+      "name": "Mobile Todo App",
+      "category": "Mobile",
+      "price": "$0",
+      "image": "",
+      "description": "A cross-platform todo app built with React Native and Expo."
+    },
+    {
+      "id": 3,
+      "name": "E-commerce Demo",
+      "category": "Web",
+      "price": "$0",
+      "image": "",
+      "description": "An e-commerce demo with product listing and cart."
+    },
+    {
+      "id": 4,
+      "name": "Flappy Clone",
+      "category": "Game",
+      "price": "$0",
+      "image": "",
+      "description": "A small Flappy Bird clone to demonstrate animation and game loop."
+    },
+    {
+      "id": 5,
+      "name": "UI Kit",
+      "category": "Design",
+      "price": "$0",
+      "image": "",
+      "description": "A reusable component library and UI kit for mobile apps."
+    },
+    {
+      "id": 6,
+      "name": "Chat Interface",
+      "category": "Mobile",
+      "price": "$0",
+      "image": "",
+      "description": "Simple chat UI showcasing message threads and input handling."
+    }
+  ]
+}
