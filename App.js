@@ -7,7 +7,7 @@ export default function App(){
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.brand}>Ahmed Jusupovic (WIP)</Text>
+        <Text style={styles.brand}>Ahmed Jusupovic</Text>
         <View style={styles.nav}>
           <TouchableOpacity style={styles.navBtn}><Text style={styles.navTxt}>Home</Text></TouchableOpacity>
           <TouchableOpacity style={styles.navBtn}><Text style={styles.navTxt}>About</Text></TouchableOpacity>

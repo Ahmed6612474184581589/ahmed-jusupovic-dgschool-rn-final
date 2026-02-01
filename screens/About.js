@@ -5,15 +5,15 @@ export default function About(){
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>About Ahmed</Text>
-      <Text style={styles.paragraph}>I build interactive mobile experiences and prototypes. Below is a short bio and the technologies I use.</Text>
+      <Text style={styles.paragraph}>Izrađujem interaktivna mobilna iskustva i prototipove. U nastavku slijedi kratka biografija i tehnologije koje koristim.</Text>
 
       <Text style={styles.subtitle}>Bio</Text>
-      <Text style={styles.paragraph}>I enjoy turning designs into polished UI and exploring animations and friendly interactions. I frequently use React Native, Expo, and modern JavaScript.</Text>
+      <Text style={styles.paragraph}>Uživam pretvarajući dizajne u uglađeni korisnički interfejs i istražujući animacije i prijateljske interakcije. Često koristim React Native, Expo i moderni JavaScript.</Text>
 
       <Text style={styles.subtitle}>Skills</Text>
-      <Text style={styles.paragraph}>• React & React Native
-• Expo
-• UI/UX & Prototyping
+      <Text style={styles.paragraph}>• React & React Native \n
+• Expo \n
+• UI/UX & Prototyping \n
 • State management</Text>
     </ScrollView>
   );
