@@ -1,13 +1,18 @@
 
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
-import About from './src/screens/About';
+import About from './screens/About.js';
+import Contact from './screens/Contact.js';
+import Settings from './screens/Settings.js';
+import ProjectDetail from './screens/ProjectDetail.js';
+import productsData from './data/product.json';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function App(){
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.brand}>Ahmed Jusupovic</Text>
+        <Text style={styles.brand}>Ahmed Jusupovićr</Text>
         <View style={styles.nav}>
           <TouchableOpacity style={styles.navBtn}><Text style={styles.navTxt}>Home</Text></TouchableOpacity>
           <TouchableOpacity style={styles.navBtn}><Text style={styles.navTxt}>About</Text></TouchableOpacity>
