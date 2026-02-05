@@ -7,13 +7,13 @@ export default function Contact(){
       <Text style={styles.title}>Contact</Text>
       <Text style={styles.paragraph}>Feel free to reach out for collaborations or questions.</Text>
 
-      <TouchableOpacity style={styles.card} onPress={()=>Linking.openURL('mailto:ahmed@example.com')}>
+      <TouchableOpacity style={styles.card} onPress={()=>Linking.openURL('mailto:ahmed@gmail.com')}>
         <Text style={styles.cardTitle}>Email</Text>
-        <Text>ahmed@example.com</Text>
+        <Text>ahmed@gmail.com</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.card} onPress={()=>Linking.openURL('tel:+1234567890')}>
+      <TouchableOpacity style={styles.card} onPress={()=>Linking.openURL('tel:+38760123456')}>
         <Text style={styles.cardTitle}>Phone</Text>
-        <Text>+1 234 567 890</Text>
+        <Text>+387 60 123 456</Text>
       </TouchableOpacity>
     </View>
   );

@@ -5,7 +5,7 @@
       "name": "Portfolio Website",
       "category": "Web",
       "price": "$0",
-      "image": "",
+      "image": "html.jpg",
       "description": "A responsive portfolio website showcasing projects and blog posts."
     },
     {
@@ -13,7 +13,7 @@
       "name": "Mobile Todo App",
       "category": "Mobile",
       "price": "$0",
-      "image": "",
+      "image": "checklist.jpg",
       "description": "A cross-platform todo app built with React Native and Expo."
     },
     {

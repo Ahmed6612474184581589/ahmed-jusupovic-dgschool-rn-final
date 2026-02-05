@@ -7,13 +7,13 @@ export default function Settings(){
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Postavke</Text>
+      <Text style={styles.title}>Settings</Text>
       <View style={styles.row}>
-        <Text style={styles.label}>Tamni način rada</Text>
+        <Text style={styles.label}>Dark Mode</Text>
         <Switch value={dark} onValueChange={setDark} />
       </View>
       <View style={styles.row}>
-        <Text style={styles.label}>Obavijesti</Text>
+        <Text style={styles.label}>Notifications</Text>
         <Switch value={notifications} onValueChange={setNotifications} />
       </View>
     </View>

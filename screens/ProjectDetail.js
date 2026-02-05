@@ -12,10 +12,10 @@ export default function ProjectDetail({ route, navigation }) {
       <Text style={styles.paragraph}>{project.description}</Text>
 
       <Text style={styles.sectionTitle}>What I did</Text>
-      <Text style={styles.paragraph}>• Implementirane UI komponente, navigacija i tokovi podataka. \n
-• Fokusirano na pristupačne mete dodira i čist raspored.</Text>
-      <Text style={styles.sectionTitle}>Sljedeći koraci</Text>
-      <Text style={styles.paragraph}>Dodaj screenshot-e i repo linkove</Text>
+      <Text style={styles.paragraph}>• Implemented UI components, navigation and data flows.
+• Focused on accessible touch targets and clean layout.</Text>
+      <Text style={styles.sectionTitle}>Next steps</Text>
+      <Text style={styles.paragraph}>Add screenshots, repo links and a live demo per project.</Text>
     </ScrollView>
   );
 }
