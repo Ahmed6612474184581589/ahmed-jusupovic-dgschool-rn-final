@@ -14,17 +14,13 @@ const Stack = createStackNavigator();
 function Landing({ navigation }) {
   const featured = (productsData && productsData.popularproducts) ? productsData.popularproducts.slice(0,6) : [];
 
-  const renderProject = ({item}) => (
-    <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('ProjectDetail', { project: item })}>
-      {item.image ? <Image source={{uri: item.image}} style={styles.cardImage} /> : <View style={styles.cardImagePlaceholder}><Text>IMG</Text></View>}
-      <View style={styles.cardBody}>
-        <Text style={styles.cardTitle}>{item.name}</Text>
-        <Text style={styles.cardCategory}>{item.category}</Text>
-        <Text numberOfLines={2} style={styles.cardDesc}>{item.description}</Text>
-      </View>
-    </TouchableOpacity>
-  );
-
+  const ImageMap = {
+    html:require("./assets/html.png"),
+    checklist:require("./assets/checklist.jpg"),
+    store:require("./assets/store.png"),
+    flappy:require("./assets/flappy.png"),
+    chat:require("./assets/chat.png"),
+  }
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
@@ -52,7 +48,16 @@ function Landing({ navigation }) {
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Featured projects</Text>
-        <FlatList data={featured} keyExtractor={(i)=>String(i.id)} renderItem={renderProject} contentContainerStyle={{paddingVertical:6}} />
+        <FlatList data={featured} keyExtractor={(i)=>String(i.id)} renderItem={({item}) => (
+    <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('ProjectDetail', { project: item })}>
+      {item.image ? <Image source={ImageMap[item.image]} style={styles.cardImage} /> : <View style={styles.cardImagePlaceholder}><Text>UI / UX</Text></View>}
+      <View style={styles.cardBody}>
+        <Text style={styles.cardTitle}>{item.name}</Text>
+        <Text style={styles.cardCategory}>{item.category}</Text>
+        <Text numberOfLines={2} style={styles.cardDesc}>{item.description}</Text>
+      </View>
+    </TouchableOpacity>
+  )} contentContainerStyle={{paddingVertical:6}} />
       </View>
 
       <View style={styles.section}>
